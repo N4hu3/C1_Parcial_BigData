@@ -42,7 +42,8 @@ jobs:
         aws-region: us-east-1
           
     - name: Deploy with Zappa
-      run: | 
+      run: |
+        python -m venv env
+        source env/bin/activate
         pip install zappa
-        zappa invoke finca_lambda.a
         zappa update dev
