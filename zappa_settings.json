@@ -13,6 +13,13 @@
             {
                 "function": "finca_lambda.py",
                 "expression": "cron(37 4 ? * THU *)"
+            },
+            {
+                "function": "finca_lambda.b",
+                "event_source": {
+                    "arn": "arn:aws:s3:::bucket-raw25",
+                    "events": ["s3:ObjectCreated:*"]
+                }
             }
         ] 
     }
