@@ -12,7 +12,7 @@
         "events": [
             {
                 "function": "casas.py",
-                "expression": "cron(45 2 ? * THU *)" 
+                "expression": "cron(10 3 ? * THU *)"
             }
         ] 
     }
