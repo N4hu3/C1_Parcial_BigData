@@ -1,18 +1,18 @@
 {
     "dev": {
         "app_function": "finca_lambda.a",
-        "project_name": "c1-parcial-bigd",
         "aws_region": "us-east-1",
+        "project_name": "c1-parcial-bigd",
         "runtime": "python3.10",
-        "s3_bucket": "zappa-map6d51nr",
+        "s3_bucket": "zappa-c91n5nacf",
         "apigateway_enabled": false,
         "manage_roles": false,
         "keep_warm": false,
         "role_name": "LabRole",
         "events": [
             {
-                "function": "casas.py",
-                "expression": "cron(10 3 ? * THU *)"
+                "function": "finca_lambda.py",
+                "expression": "cron(10 4 ? * THU *)"
             }
         ] 
     }
