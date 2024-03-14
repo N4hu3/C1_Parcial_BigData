@@ -12,7 +12,7 @@
         "events": [
             {
                 "function": "finca_lambda.py",
-                "expression": "cron(25 4 ? * THU *)"
+                "expression": "cron(35 4 ? * THU *)"
             }
         ] 
     }

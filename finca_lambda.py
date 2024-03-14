@@ -11,7 +11,7 @@ s3 = boto3.client('s3')
 
 
 def a(event, context):
-    base_url = "https://casas.mitula.com.co/casas/bogota"
+    base_url = "https://casas.mitula.com.co/casas/villavicencio"
     bucket_name = "bucket-raw25"
     folder_name = "casas"
 
