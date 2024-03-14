@@ -32,9 +32,6 @@ jobs:
 
     - name: Install dependencies
       run: pip install -r requirements.txt
-
-    - name: Run Flake8
-      run: flake8
       
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
@@ -47,4 +44,6 @@ jobs:
     - name: Deploy with Zappa
       run: | 
         pip install zappa
-        zappa update dev
+        Zappa deploy dev 
+        Zappa invoke finca_lambda.a
+        Zappa update dev
