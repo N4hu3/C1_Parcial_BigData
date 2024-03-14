@@ -44,6 +44,6 @@ jobs:
     - name: Deploy with Zappa
       run: | 
         pip install zappa
-        Zappa deploy dev 
-        Zappa invoke finca_lambda.a
-        Zappa update dev
+        zappa deploy dev 
+        zappa invoke finca_lambda.a
+        zappa update dev
